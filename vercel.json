@@ -1,0 +1,19 @@
+{
+  "rewrites": [
+    {
+      "source": "/_next/image",
+      "destination": "/api/image"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Frame-Options",
+          "value": "ALLOWALL"
+        }
+      ]
+    }
+  ]
+}
